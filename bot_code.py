@@ -9,7 +9,7 @@ driver.find_element_by_xpath('//*[@id="u_0_2"]').click()
 driver.maximize_window()
 time.sleep(5)
 # driver.find_element_by_xpath('//*[@id="userNavigationLabel"]').click()
-driver.find_element_by_xpath("//div[contains(@id,'userNavigationLabel')]").click()
+driver.find_element('<div class="_6qfu _5lxt" id="userNavigationLabel">Account Settings</div>').click()
 # driver.find_element_by_xpath('//*[@id="js_46"]/div/div/ul/li[9]/a/span/span')
 
 # driver.find_element_by_xpath('//*[@id="facebook"]/body').click()
