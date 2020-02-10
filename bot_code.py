@@ -6,7 +6,7 @@ driver.find_element_by_xpath('//*[@id="email"]').send_keys(sys.argv[1])
 driver.find_element_by_xpath('//*[@id="pass"]').send_keys(sys.argv[2])
 driver.find_element_by_xpath('//*[@id="u_0_2"]').click()
 driver.maximize_window()
-driver.find_element_by_xpath('//*[@id="userNavigationLabel"]')
+driver.find_element_by_xpath('//*[@id="userNavigationLabel"]').click()
 # driver.find_element_by_xpath('//*[@id="js_46"]/div/div/ul/li[9]/a/span/span')
 
 # driver.find_element_by_xpath('//*[@id="facebook"]/body').click()
