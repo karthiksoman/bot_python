@@ -5,6 +5,9 @@ from selenium.webdriver.chrome.options import Options
 
 option = Options()
 option.add_argument("--disable-extensions")
+option.add_experimental_option("prefs", {
+    "profile.default_content_setting_values.notifications": 2
+})
 driver = webdriver.Chrome(chrome_options=option,executable_path='/usr/local/bin/chromedriver.exe')
 driver.get("https://www.facebook.com/")
 driver.find_element_by_xpath('//*[@id="email"]').send_keys(sys.argv[1])
